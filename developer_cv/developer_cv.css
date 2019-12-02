@@ -1,0 +1,212 @@
+* {	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--azul-oscuro: #353066;
+	--azul-claro: #36c7e2;
+	--fondo: #eaf2ff;
+	--radio: 6em;
+}
+html {
+	display: flex;
+	justify-content: center;
+}
+.page {
+	height: 27.9cm;
+	width: 21.6cm;
+	background-color: var(--azul-oscuro);
+	padding: 1.5em 0;
+	display: flex;
+	border: .2px solid black;
+}
+.barra-lateral {
+	flex-basis: 35%;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+}
+.barra-lateral img {
+	border-radius: 50%;
+	border: 5px solid black;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+}
+.barra-lateral h1 {
+	font-weight: bolder;
+	border-bottom: 3px solid white;
+	font-size: 2em;
+}
+.barra-lateral h2 {
+	font-size: 1rem;
+}
+h1, h2 {
+	text-align: center;
+	padding: .8rem 0;
+}
+.main {
+	flex-basis: 65%;
+	background-color: var(--fondo);
+	position: relative;
+	padding-left: 2em;
+}
+.info-tag {
+	background-color: var(--azul-claro);
+	color: white;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+}
+.info-tag i {
+	margin-right: 1em;
+	font-size: 1.5em;
+}
+.main .info-tag {
+	padding: .5em .4em;
+	margin-top: 2rem;
+	margin-bottom: 2.2rem;
+}
+.info-tag.perfil {
+	margin-top: 1rem;
+}
+.barra-lateral h3 {
+	padding: .5em 0 .5em 1.5em;
+	max-width: 85%;
+	margin-top: 1.5rem;
+}
+.main article {
+	display: flex;
+	margin-bottom: .4rem;
+}
+.main article h4 {
+	padding-right: 1em;
+}
+.main > article > *:nth-child(1) {
+	flex-basis: 20%;
+	font-weight: bold;
+}
+.main > article > *:nth-child(2) {
+	flex-basis: 80%;
+}
+.barra-lateral > p, .barra-lateral > div {
+	margin: .8em 1.2em 0 .8em;
+	font-size: 1rem;
+}
+.barra-lateral div > i {
+	margin-right: 1.5rem;
+}
+h4 {
+	font-size: 1.1em;
+}
+h4 i {
+	color: var(--azul-oscuro);
+	font-size: 1.5em;
+	margin-right: .5em;
+}
+.skills-container {
+	margin-right: 10px;
+	display: grid;
+	grid-column-gap: 10px;
+	grid-row-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+.skill {
+	flex-direction: column;
+	margin-bottom: .8em;
+	justify-content: center;
+	align-items: center;
+}
+.skill > * {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.skill > h4 {
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+.postgresql:before,
+.lumen:before,
+.redux:before,
+.mongo:before,
+.webpack:before,
+.babel:before,
+.parcel:before {
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	content:"";
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: .5em;
+	filter: opacity(1) drop-shadow(0 0 0 var(--azul-oscuro));
+}
+.postgresql:before,
+.lumen:before,
+.redux:before{
+	max-height: 100%;
+	max-width: 100%;
+}
+.postgresql:before {
+	background-image: url("../assets/logo-postgresql.png");
+	filter: opacity(.4) drop-shadow(0 0 0 var(--azul-oscuro));
+}
+.lumen:before {
+	background-image: url("../assets/logo-lumen.png");
+	filter: opacity(.8) drop-shadow(0 0 0 var(--azul-oscuro));
+}
+.redux:before {
+	background-image: url("../assets/logo-redux.png");
+}
+.mongo:before {
+	background-image: url("../assets/mongodb.png");
+	background-size: 90%;
+	filter: opacity(.6) drop-shadow(0 0 0 var(--azul-oscuro));
+}
+.webpack:before {
+	background-image: url("../assets/webpack.png");
+	filter: opacity(.4) drop-shadow(0 0 0 var(--azul-oscuro));
+}
+.babel:before {
+	background-image: url("../assets/babel.png");
+}
+.parcel:before {
+	background-image: url("../assets/parcel.png");
+}
+.titulo-univ {
+	display: flex;
+	padding-top: 1em;
+}
+.other-skills {
+	grid-column: 1 / -1;
+}
+.other-skills .title {
+	width: 100%;
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+}
+.container {
+	display: flex;
+}
+.left, .right {
+	width: 50%;
+}
+.other-skills .container i {
+	color: var(--azul-oscuro);
+	margin-right: 0.5rem;
+	font-size: 1.5rem;
+}
+.other-skills .container .right div,
+.other-skills .container .left div {
+	padding: 0.5rem 0;
+}
+.other-skills .container i img {
+	color: var(--azul-oscuro);
+	max-height: 24px;
+}
+.extra-ml {
+	margin-left: 0.5rem;
+}

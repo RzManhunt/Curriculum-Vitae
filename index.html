@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="./images/pageicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./cv.css">
+
+    <title>Curriculum Vitae</title>
+<style>
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.container {
+	display: flex;
+	height: 100vh;
+	background-color: purple;	
+}
+.container > * {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.4;
+}
+.container > *:hover {
+	opacity: 1;
+	border: 5px solid white;
+}
+.landing-link {
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: bold;
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: 2rem;
+	transition: all 0.4s;
+}
+.landing-link:hover {
+	font-size: 3rem;
+	padding: 3rem;
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div>
+		<a class="landing-link" href="./developer_cv/en_developer_cv.html">English</a>
+	</div>
+	<div><a class="landing-link" href="./developer_cv/es_developer_cv.html">Español</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/*Grafico Circular*/
+
+.grafico_circular.circulo_externo {
+	position: relative;
+	border: 1px solid black;
+	width: var(--radio);
+	height: var(--radio);
+	border-radius: 50%;
+	background-color: #ff8a80;
+	margin-top: .4em;
+}
+.grafico_circular > .circulo_interno {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid black;
+	width: calc(var(--radio) * .8);
+	height: calc(var(--radio) * .8);
+	border-radius: 50%;
+	background-color: white;
+	z-index: 100;
+}
+.grafico_circular > .circulo_clip {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: var(--radio);
+	height: var(--radio);
+	border-radius: 50%;
+	background-color: blue;
+}
+.grafico_circular > input {
+	width: 100%;
+	font-size: calc(var(--radio) * .25);
+	font-weight: bold;
+	border: none;
+	outline: none;
+	background: transparent;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+}
+.grafico_circular > .circulo_clip.v-0 {clip-path: polygon(50% 50%, 50% 0, 50% 0%);}
+.grafico_circular > .circulo_clip.v-1 {clip-path: polygon(50% 50%, 50% 0, 54% 0%);}
+.grafico_circular > .circulo_clip.v-2 {clip-path: polygon(50% 50%, 50% 0, 58% 0%);}
+.grafico_circular > .circulo_clip.v-3 {clip-path: polygon(50% 50%, 50% 0, 62% 0%);}
+.grafico_circular > .circulo_clip.v-4 {clip-path: polygon(50% 50%, 50% 0, 66% 0%);}
+.grafico_circular > .circulo_clip.v-5 {clip-path: polygon(50% 50%, 50% 0, 70% 0%);}
+.grafico_circular > .circulo_clip.v-6 {clip-path: polygon(50% 50%, 50% 0, 74% 0%);}
+.grafico_circular > .circulo_clip.v-7 {clip-path: polygon(50% 50%, 50% 0, 78% 0%);}
+.grafico_circular > .circulo_clip.v-8 {clip-path: polygon(50% 50%, 50% 0, 82% 0%);}
+.grafico_circular > .circulo_clip.v-9 {clip-path: polygon(50% 50%, 50% 0, 86% 0%);}
+.grafico_circular > .circulo_clip.v-10 {clip-path: polygon(50% 50%, 50% 0, 90% 0%);}
+.grafico_circular > .circulo_clip.v-11 {clip-path: polygon(50% 50%, 50% 0, 94% 0%);}
+.grafico_circular > .circulo_clip.v-12 {clip-path: polygon(50% 50%, 50% 0, 98% 0%);}
+.grafico_circular > .circulo_clip.v-13 {clip-path: polygon(50% 50%, 50% 0, 102% 0%);}
+.grafico_circular > .circulo_clip.v-14 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 6%);}
+.grafico_circular > .circulo_clip.v-15 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 10%);}
+.grafico_circular > .circulo_clip.v-17 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 18%);}
+.grafico_circular > .circulo_clip.v-18 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 22%);}
+.grafico_circular > .circulo_clip.v-16 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 14%);}
+.grafico_circular > .circulo_clip.v-19 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 26%);}
+.grafico_circular > .circulo_clip.v-20 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 30%);}
+.grafico_circular > .circulo_clip.v-21 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 34%);}
+.grafico_circular > .circulo_clip.v-22 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 38%);}
+.grafico_circular > .circulo_clip.v-23 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 42%);}
+.grafico_circular > .circulo_clip.v-24 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 46%);}
+.grafico_circular > .circulo_clip.v-25 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%);}
+.grafico_circular > .circulo_clip.v-26 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 54%);}
+.grafico_circular > .circulo_clip.v-27 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 58%);}
+.grafico_circular > .circulo_clip.v-28 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 62%);}
+.grafico_circular > .circulo_clip.v-29 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 66%);}
+.grafico_circular > .circulo_clip.v-30 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 70%);}
+.grafico_circular > .circulo_clip.v-31 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 74%);}
+.grafico_circular > .circulo_clip.v-32 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 78%);}
+.grafico_circular > .circulo_clip.v-33 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 82%);}
+.grafico_circular > .circulo_clip.v-34 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 86%);}
+.grafico_circular > .circulo_clip.v-35 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 90%);}
+.grafico_circular > .circulo_clip.v-36 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 94%);}
+.grafico_circular > .circulo_clip.v-37 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 98%);}
+.grafico_circular > .circulo_clip.v-38 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%);}
+.grafico_circular > .circulo_clip.v-39 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 94% 100%);}
+.grafico_circular > .circulo_clip.v-40 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 90% 100%);}
+.grafico_circular > .circulo_clip.v-41 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 86% 100%);}
+.grafico_circular > .circulo_clip.v-42 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 82% 100%);}
+.grafico_circular > .circulo_clip.v-43 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 78% 100%);}
+.grafico_circular > .circulo_clip.v-44 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 74% 100%);}
+.grafico_circular > .circulo_clip.v-45 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 70% 100%);}
+.grafico_circular > .circulo_clip.v-46 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 66% 100%);}
+.grafico_circular > .circulo_clip.v-47 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 62% 100%);}
+.grafico_circular > .circulo_clip.v-48 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 58% 100%);}
+.grafico_circular > .circulo_clip.v-49 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 54% 100%);}
+.grafico_circular > .circulo_clip.v-50 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%);}
+.grafico_circular > .circulo_clip.v-51 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 46% 100%);}
+.grafico_circular > .circulo_clip.v-52 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 42% 100%);}
+.grafico_circular > .circulo_clip.v-53 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 38% 100%);}
+.grafico_circular > .circulo_clip.v-54 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 34% 100%);}
+.grafico_circular > .circulo_clip.v-55 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 30% 100%);}
+.grafico_circular > .circulo_clip.v-56 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 26% 100%);}
+.grafico_circular > .circulo_clip.v-57 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 22% 100%);}
+.grafico_circular > .circulo_clip.v-58 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 18% 100%);}
+.grafico_circular > .circulo_clip.v-59 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 14% 100%);}
+.grafico_circular > .circulo_clip.v-60 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 10% 100%);}
+.grafico_circular > .circulo_clip.v-61 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 6% 100%);}
+.grafico_circular > .circulo_clip.v-62 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, 2% 100%);}
+.grafico_circular > .circulo_clip.v-63 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%);}
+.grafico_circular > .circulo_clip.v-64 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 94%);}
+.grafico_circular > .circulo_clip.v-65 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 90%);}
+.grafico_circular > .circulo_clip.v-66 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 86%);}
+.grafico_circular > .circulo_clip.v-67 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 82%);}
+.grafico_circular > .circulo_clip.v-68 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 78%);}
+.grafico_circular > .circulo_clip.v-69 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 74%);}
+.grafico_circular > .circulo_clip.v-70 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 70%);}
+.grafico_circular > .circulo_clip.v-71 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 66%);}
+.grafico_circular > .circulo_clip.v-72 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 62%);}
+.grafico_circular > .circulo_clip.v-73 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 58%);}
+.grafico_circular > .circulo_clip.v-74 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 54%);}
+.grafico_circular > .circulo_clip.v-75 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%);}
+.grafico_circular > .circulo_clip.v-76 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 46%);}
+.grafico_circular > .circulo_clip.v-77 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 42%);}
+.grafico_circular > .circulo_clip.v-78 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 38%);}
+.grafico_circular > .circulo_clip.v-79 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 34%);}
+.grafico_circular > .circulo_clip.v-80 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 30%);}
+.grafico_circular > .circulo_clip.v-81 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 26%);}
+.grafico_circular > .circulo_clip.v-82 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 22%);}
+.grafico_circular > .circulo_clip.v-83 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 18%);}
+.grafico_circular > .circulo_clip.v-84 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 14%);}
+.grafico_circular > .circulo_clip.v-85 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 10%);}
+.grafico_circular > .circulo_clip.v-86 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 6%);}
+.grafico_circular > .circulo_clip.v-87 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% 2%);}
+.grafico_circular > .circulo_clip.v-88 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%);}
+.grafico_circular > .circulo_clip.v-89 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 6% 0%);}
+.grafico_circular > .circulo_clip.v-90 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 10% 0%);}
+.grafico_circular > .circulo_clip.v-91 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 14% 0%);}
+.grafico_circular > .circulo_clip.v-92 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 18% 0%);}
+.grafico_circular > .circulo_clip.v-93 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 22% 0%);}
+.grafico_circular > .circulo_clip.v-94 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 26% 0%);}
+.grafico_circular > .circulo_clip.v-95 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 30% 0%);}
+.grafico_circular > .circulo_clip.v-96 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 34% 0%);}
+.grafico_circular > .circulo_clip.v-97 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 38% 0%);}
+.grafico_circular > .circulo_clip.v-98 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 42% 0%);}
+.grafico_circular > .circulo_clip.v-99 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 46% 0%);}
+.grafico_circular > .circulo_clip.v-100 {clip-path: polygon(50% 50%, 50% 0, 102% 0%, 100% 50%, 100% 102%, 50% 100%, -2% 100%, 0% 50%, 0% -2%, 50% 0%);}

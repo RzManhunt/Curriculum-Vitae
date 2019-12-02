@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" href="./images/pageicon.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./developer_cv.css">
+    <link rel="stylesheet" type="text/css" href="../assets/chart.css">
+
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+	<div class="page">
+
+		<!-- BARRA LATERAL -->
+
+		<aside class="barra-lateral">
+			<img src="../assets/foto.jpg" alt="Foto de Perfil" />
+			<h1>Luis Moreno</h1>
+			<h2>Desarrollador Full-Stack Jr</h2>
+
+			<h3 class="info-tag perfil"><i class="far fa-user-circle"></i>Perfil</h3>
+			<p>Licenciado en Ciencias Gerenciales con gran interés en el desarrollo web. Autodidacta, con experiencia en el desarrollo de pequeñas aplicaciones y gran disposición a aprender. Capacidad para la resolución de problemas y trabajar bajo presión.</p>
+
+			<h3 class="info-tag contacto"><i class="far fa-address-card"></i>Contacto</h3>
+			<div><i class="far fa-envelope"></i>lamsarmiento@gmail.com</div>
+			<div><i class="fas fa-phone"></i>0414 - 927.03.14</div>
+			<div><i class="fas fa-home"></i>Guataparo, Valencia</div>
+
+			<h3 class="info-tag hobby"><i class="fab fa-angellist"></i>Hobbies</h3>
+			<div><i class="fas fa-futbol"></i>Futbol</div>
+			<div><i class="fas fa-video"></i>Peliculas y Series</div>
+			<!-- <div><i class="far fa-file-code"></i>Programación</div> -->
+		</aside>
+
+		<!-- CUERPO PRINCIPAL -->
+
+		<main class="main">
+			<h3 class="info-tag educacion"><i class="fas fa-graduation-cap"></i>Formacion Academica</h3>
+			<article>
+				<div>2008  -  2011</div>
+				<div>
+					<h4>Intituto Universitario Tecnologico del Centro (IUTI)</h4>
+					<span class="titulo-univ">T.S.U en Mecanica Automotriz</span>
+				</div>
+			</article>
+			<article>
+				<div>2012  -  2019</div>
+				<div>
+					<h4>Universidad Tecnologica del Centro (UNITEC)</h4>
+					<span class="titulo-univ">Licenciado en Ciencias Administrativas y Gerenciales Mencion Logistica</span>
+				</div>
+			</article>
+			<h3 class="info-tag"><i class="far fa-star"></i>Habilidades</h3>
+			<section class="skills-container">
+				<article class="skill">
+					<h4><i class="fab fa-html5"></i>HTML 5</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="90%">
+						<div class="circulo_clip v-90"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-js-square"></i>JavaScript</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="80%">
+						<div class="circulo_clip v-80"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-php"></i>PHP</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="70%">
+						<div class="circulo_clip v-70"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-css3-alt"></i>CSS 3</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="90%">
+						<div class="circulo_clip v-90"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-react"></i>React</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="80%">
+						<div class="circulo_clip v-80"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-laravel"></i>Laravel</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="70%">
+						<div class="circulo_clip v-70"></div>
+					</div>
+				</article>
+			<!-- 
+				<article class="skill">
+					<h4><i class="fab fa-git-square"></i>Git</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="80%">
+						<div class="circulo_clip v-80"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-sass"></i>SASS</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="90%">
+						<div class="circulo_clip v-90"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-bootstrap"></i>Bootstrap 4</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="60%">
+						<div class="circulo_clip v-60"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fas fa-language"></i>Ingles (B1)</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="75%">
+						<div class="circulo_clip v-75"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4><i class="fab fa-gulp"></i>Gulp</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="70%">
+						<div class="circulo_clip v-70"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4 class="webpack">Webpack</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()">
+						<div class="circulo_clip v-50"></div>
+					</div>
+				</article>
+				<article class="skill">
+					<h4 class="mongo">MongoDB</h4>
+					<div class="grafico_circular circulo_externo">
+						<div class="circulo_interno"></div>
+						<input type="text" name="valor" class="input_grafico" onblur="getValor()" value="70%">
+						<div class="circulo_clip v-70"></div>
+					</div>
+				</article>
+			-->
+			<div class="other-skills">
+				<div class="title">Otras Habilidades:</div>
+				<div class="container">
+					<div class="left">
+						<div>
+							<i class="fas fa-language"></i>Ingles (B1)
+						</div>
+						<div>
+							<i class="fab fa-git-square"></i>Git
+							<i class="extra-ml fab fa-github-square"></i>GitHub
+						</div>
+						<div>
+							<i class="fab fa-sass"></i>SASS
+						</div>
+						<div>
+							<i class="fab fa-bootstrap"></i>Bootstrap 4
+						</div>
+					</div>
+					<div class="right">
+						<div><i class="fab fa-gulp"></i>Gulp</div>
+						<div><span class="redux">Redux</span></div>
+						<div><span class="postgresql">PostgreSQL</span></div>
+						<div><span class="lumen">Laravel Lumen</span></div>
+					</div>
+				</div>
+			</div>
+			</section>
+		</main>
+	</div>
+
+<script src="../assets/chart.js"></script>
+
+</body>
+</html>

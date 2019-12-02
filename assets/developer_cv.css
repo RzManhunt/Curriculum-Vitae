@@ -152,11 +152,10 @@ h4 i {
 }
 .postgresql:before {
 	background-image: url("../assets/logo-postgresql.png");
-	filter: opacity(.4) drop-shadow(0 0 0 var(--azul-oscuro));
 }
 .lumen:before {
 	background-image: url("../assets/logo-lumen.png");
-	filter: opacity(.8) drop-shadow(0 0 0 var(--azul-oscuro));
+	background-size: 60%;
 }
 .redux:before {
 	background-image: url("../assets/logo-redux.png");

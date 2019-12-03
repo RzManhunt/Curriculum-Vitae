@@ -12,6 +12,23 @@ html {
 	display: flex;
 	justify-content: center;
 }
+.git-nav {
+	color: var(--fondo);
+	position: fixed;
+	width: 21.6cm;
+	top: 0;
+	background-color: var(--azul-oscuro);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	font-size: 1.5rem;
+	padding: 0.5rem 0;
+}
+.git-nav i {
+	margin-right: 3rem;
+	font-size: 2rem;
+}
 .page {
 	height: 27.9cm;
 	width: 21.6cm;
@@ -180,6 +197,7 @@ h4 i {
 	padding-top: 1em;
 }
 .other-skills {
+	margin-top: 1rem;
 	grid-column: 1 / -1;
 }
 .other-skills .title {
@@ -189,6 +207,7 @@ h4 i {
 }
 .container {
 	display: flex;
+	padding-left: 2rem;
 }
 .left, .right {
 	width: 50%;

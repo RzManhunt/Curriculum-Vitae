@@ -6,7 +6,10 @@
 	--azul-oscuro: #353066;
 	--azul-claro: #36c7e2;
 	--fondo: #eaf2ff;
-	--radio: 6em;
+	--radio: 5rem;
+	--fs-sm: 0.8rem;
+	--fs-md: 1.3rem;
+	--fs-lg: 1.8rem;
 }
 html {
 	display: flex;
@@ -22,12 +25,12 @@ html {
 	align-items: center;
 	justify-content: center;
 	z-index: 1000;
-	font-size: 1.5rem;
+	font-size: var(--fs-md);
 	padding: 0.5rem 0;
 }
 .git-nav i {
 	margin-right: 3rem;
-	font-size: 2rem;
+	font-size: var(--fs-lg);
 }
 .page {
 	height: 27.9cm;
@@ -54,14 +57,14 @@ html {
 .barra-lateral h1 {
 	font-weight: bolder;
 	border-bottom: 3px solid white;
-	font-size: 2em;
+	font-size: 2rem;
 }
 .barra-lateral h2 {
 	font-size: 1rem;
 }
 h1, h2 {
 	text-align: center;
-	padding: .8rem 0;
+	padding: 1.5rem 0;
 }
 .main {
 	flex-basis: 65%;
@@ -72,13 +75,14 @@ h1, h2 {
 .info-tag {
 	background-color: var(--azul-claro);
 	color: white;
-	font-size: 1.5em;
+	font-size: var(--fs-md);
 	display: flex;
 	align-items: center;
+	margin: 1.5rem 0;
 }
 .info-tag i {
 	margin-right: 1em;
-	font-size: 1.5em;
+	font-size: var(--fs-md);
 }
 .main .info-tag {
 	padding: .5em .4em;
@@ -95,7 +99,9 @@ h1, h2 {
 }
 .main article {
 	display: flex;
-	margin-bottom: .4rem;
+}
+.education-article {
+	margin-bottom: 2rem;
 }
 .main article h4 {
 	padding-right: 1em;
@@ -108,19 +114,19 @@ h1, h2 {
 	flex-basis: 80%;
 }
 .barra-lateral > p, .barra-lateral > div {
-	margin: .8em 1.2em 0 .8em;
-	font-size: 1rem;
+	margin: .8rem 2rem 0 1.25rem;
+	font-size: var(--fs-sm);
 }
 .barra-lateral div > i {
 	margin-right: 1.5rem;
 }
 h4 {
-	font-size: 1.1em;
+	font-size: var(--fs-sm);
 }
 h4 i {
 	color: var(--azul-oscuro);
-	font-size: 1.5em;
-	margin-right: .5em;
+	font-size: var(--fs-md);
+	margin-right: .5rem;
 }
 .skills-container {
 	margin-right: 10px;
@@ -131,7 +137,7 @@ h4 i {
 }
 .skill {
 	flex-direction: column;
-	margin-bottom: .8em;
+	margin-bottom: .8rem;
 	justify-content: center;
 	align-items: center;
 }
@@ -144,13 +150,11 @@ h4 i {
 	text-align: center;
 	padding-bottom: 0.5rem;
 }
+.mysql:before,
 .postgresql:before,
-.lumen:before,
 .redux:before,
 .mongo:before,
-.webpack:before,
-.babel:before,
-.parcel:before {
+.webpack:before {
 	display: inline-block;
 	height: 25px;
 	width: 25px;
@@ -158,43 +162,30 @@ h4 i {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-right: .5em;
+	margin-right: .5rem;
 	filter: opacity(1) drop-shadow(0 0 0 var(--azul-oscuro));
 }
-.postgresql:before,
-.lumen:before,
-.redux:before{
-	max-height: 100%;
-	max-width: 100%;
+.mysql:before {
+	background-image: url("../assets/logo-mysql.ico");
 }
 .postgresql:before {
 	background-image: url("../assets/logo-postgresql.png");
 }
-.lumen:before {
-	background-image: url("../assets/logo-lumen.png");
-	background-size: 60%;
-}
 .redux:before {
 	background-image: url("../assets/logo-redux.png");
+	background-size: 95%;
 }
 .mongo:before {
-	background-image: url("../assets/mongodb.png");
-	background-size: 90%;
+	background-image: url("../assets/logo-mongodb.ico");
 	filter: opacity(.6) drop-shadow(0 0 0 var(--azul-oscuro));
 }
 .webpack:before {
-	background-image: url("../assets/webpack.png");
+	background-image: url("../assets/logo-webpack.ico");
 	filter: opacity(.4) drop-shadow(0 0 0 var(--azul-oscuro));
-}
-.babel:before {
-	background-image: url("../assets/babel.png");
-}
-.parcel:before {
-	background-image: url("../assets/parcel.png");
 }
 .titulo-univ {
 	display: flex;
-	padding-top: 1em;
+	padding-top: 0.5rem;
 }
 .other-skills {
 	margin-top: 1rem;
@@ -203,7 +194,7 @@ h4 i {
 .other-skills .title {
 	width: 100%;
 	font-weight: bold;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1.5rem;
 }
 .container {
 	display: flex;
@@ -215,15 +206,13 @@ h4 i {
 .other-skills .container i {
 	color: var(--azul-oscuro);
 	margin-right: 0.5rem;
-	font-size: 1.5rem;
+	font-size: var(--fs-md);
+	height: 25px;
+	width: 25px;
 }
 .other-skills .container .right div,
 .other-skills .container .left div {
 	padding: 0.5rem 0;
-}
-.other-skills .container i img {
-	color: var(--azul-oscuro);
-	max-height: 24px;
 }
 .extra-ml {
 	margin-left: 0.5rem;
